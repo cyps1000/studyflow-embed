@@ -1,5 +1,16 @@
 ## Studyflow Embed Prototype
 
+### Requirements
+```bash
+NodeJS 14 or higher
+Yarn
+```
+
+### Yarn installation
+```bash
+$ npm i -g yarn
+```
+
 ### Usage
 
 #### Install packages:

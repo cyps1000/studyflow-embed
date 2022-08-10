@@ -1,0 +1,27 @@
+{
+  "name": "studyflow-embed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "install:dependencies": "yarn install && yarn --cwd react-app/client install",
+    "react:build": "yarn --cwd react-app/client build",
+    "server": "ts-node src/server.ts",
+    "react:server": "ts-node react-app/index.ts",
+    "start": "concurrently \"yarn server\" \"yarn react:server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "axios": "^0.27.2",
+    "concurrently": "^7.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "http-proxy-middleware": "^2.0.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}

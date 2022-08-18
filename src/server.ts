@@ -49,13 +49,13 @@ server.get("/studyflow-manifest", async (req, res) => {
 /**
  * Sets up the proxy for the asset manifest
  */
-server.use(
-  "/v2.0/asset-manifest.json",
-  createProxyMiddleware({
-    target: APP_LINK,
-    changeOrigin: true
-  })
-);
+// server.use(
+//   "/v2.0/asset-manifest.json",
+//   createProxyMiddleware({
+//     target: APP_LINK,
+//     changeOrigin: true
+//   })
+// );
 
 server.listen(PORT, () =>
   console.log(`Express Server is running on port ${PORT}`)

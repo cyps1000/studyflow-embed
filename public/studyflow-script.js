@@ -2,7 +2,7 @@
  * Handles fetching react static assets
  */
 function fetchStaticAssets() {
-  fetch("http://localhost:3001/studyflow-manifest")
+  fetch("https://external.studyflow.nl/v2.0/asset-manifest.json")
     .then((res) => res.json())
     .then((data) => {
       /**
